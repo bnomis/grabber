@@ -1,0 +1,10 @@
+#!/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+# EASY-INSTALL-ENTRY-SCRIPT: 'grabber==0.1.0','console_scripts','grabber'
+__requires__ = 'grabber==0.1.0'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('grabber==0.1.0', 'console_scripts', 'grabber')()
+    )

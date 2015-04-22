@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key><string>com.yajogo.grabber.movie</string>
+	<key>UserName</key><string>root</string>
+    <key>StandardOutPath</key><string>/var/root/logs/grabber-stdout.log</string>
+    <key>StandardErrorPath</key><string>/var/root/logs/grabber-stderr.log</string>
+	<key>WorkingDirectory</key><string>/var/root/grabber/venv/bin</string>
+    <key>StartCalendarInterval</key>
+        <dict>
+            <key>Hour</key>
+            <integer>0</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+	<key>ProgramArguments</key>
+    	<array>
+    		<string>/var/root/grabber/venv/bin/grabber</string>
+    		<string>--movie</string>
+    	</array>
+</dict>
+</plist>
