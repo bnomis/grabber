@@ -20,7 +20,7 @@ To make a movie of a specific day's grabs run:
 $ grabber [your-normal-grabber-options] --movie-day YYYY-MM-DD
 ```
 
-When making a movie pass in the same options you used to create the grabs. Just add --movie on the end of the options. This is so the script knows where to the grabs where stored. Note: you may need to specify the path the `ffmpeg`.
+When making a movie pass in the same options you used to create the grabs. Just add --movie on the end of the options. This is so the script knows where the grabs were stored. Note: you may need to specify the path the `ffmpeg`.
 
 The movie is placed in to the same directory as the grabs, named `grab.mp4`.
 
@@ -80,7 +80,7 @@ The script, by default, uses the supplied [Source Code Pro][scp] font from Adobe
 
 The script needs to be run as root. So, before you install become root.
 
-The script requires Pillow to time stamp the screen grabs so you may as well create a virtualenv first and then pip install.
+The script requires Pillow to time stamp the screen grabs, so you may as well create a virtualenv first and then pip install.
 
 Suggested install steps are:
 
