@@ -75,10 +75,12 @@ def grab_movie(options):
             'grab%04d.png',
             '-s',
             'hd480',
-            '-vcodec',
-            'mpeg4',
+            '-c:v',
+            'libx264',
             '-b:v',
-            '1800000',
+            '1000k',
+            '-pix_fmt',
+            'yuv420p',
             '-r',
             '25',
             '-y',
@@ -91,7 +93,7 @@ def grab_movie(options):
         # pass 1
         run_cmd(options, argv, cwd=odir)
         # pass 2
-        argv[19] = '2'
+        argv[21] = '2'
         run_cmd(options, argv, cwd=odir)
     else:
         write_log(options, 'No movie to be made in %s' % odir)
